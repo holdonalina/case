@@ -1,23 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class ToDoItem
-{
-  public string Name { get; set; }
-  public bool IsCompleted { get; set; }
-
-  public ToDoItem(string name)
-  {
-    Name = name;
-    IsCompleted = false;
-  }
-
-  public override string ToString()
-  {
-    return IsCompleted ? $"[✓] {Name}" : $"[ ] {Name}";
-  }
-}
-
 class Program
 {
   static List<ToDoItem> todoList = new List<ToDoItem>();
